@@ -14,7 +14,7 @@
       <title>Archives: 2023/4 |  Hexo</title>
   <meta name="generator" content="hexo-theme-ayer">
       
-      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="/who.jpg" />
        
 <link rel="stylesheet" href="/dist/main.css">
 
@@ -49,6 +49,17 @@
 <body>
   <div id="app">
     
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      
       
     <main class="content on">
       <section class="outer">
@@ -91,13 +102,13 @@
       <article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header">
-      <a href="/2023/04/30/hello-world/" class="archive-article-date">
-  <time datetime="2023-04-29T19:59:47.719Z" itemprop="datePublished">04/30</time>
+      <a href="/2023/04/29/postName/" class="archive-article-date">
+  <time datetime="2023-04-29T03:56:54.000Z" itemprop="datePublished">04/29</time>
 </a>
        
 <h2 itemprop="name">
-  <a class="archive-article-title" href="/2023/04/30/hello-world/"
-    >Hello World</a> 
+  <a class="archive-article-title" href="/2023/04/29/postName/"
+    >关于作者</a> 
 </h2>
  
 
@@ -120,7 +131,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2015-2023
+        2023
         <i class="ri-heart-fill heart_icon"></i> John Doe
       </li>
     </ul>
@@ -173,7 +184,7 @@
 <nav class="navbar">
   
   <div class="logo">
-    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
+    <a href="/"><img src="/images/who.jpg" alt="Hexo"></a>
   </div>
   
   <ul class="nav nav-main">
@@ -199,15 +210,11 @@
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
-    </li>
-    
-    <li class="nav-item">
       <a class="nav-item-link" href="/friends">友链</a>
     </li>
     
     <li class="nav-item">
-      <a class="nav-item-link" href="/2019/about">关于我</a>
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://github.com/prxdsen/">关于我</a>
     </li>
     
   </ul>
@@ -243,16 +250,6 @@
   <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
   <div class="reward-box">
     
-    <div class="reward-item">
-      <img class="reward-img" src="/images/alipay.jpg">
-      <span class="reward-type">支付宝</span>
-    </div>
-    
-    
-    <div class="reward-item">
-      <img class="reward-img" src="/images/wechat.jpg">
-      <span class="reward-type">微信</span>
-    </div>
     
   </div>
 </div>
@@ -391,6 +388,10 @@
 
 <!-- ClickBoom1 -->
 
+<script src="https://cdn.staticfile.org/animejs/3.2.1/anime.min.js"></script>
+
+<script src="/js/clickBoom1.js"></script>
+ 
 <!-- ClickBoom2 -->
 
 <!-- CodeCopy -->
@@ -452,7 +453,9 @@
 </script>
  
 <!-- CanvasBackground -->
-
+ 
+<script src="/js/dz.js"></script>
+ 
 <script>
   if (window.mermaid) {
     mermaid.initialize({ theme: "forest" });
